@@ -23,6 +23,7 @@ import org.jellyfin.androidtv.auth.repository.UserRepository
 import org.jellyfin.androidtv.databinding.ActivityMainBinding
 import org.jellyfin.androidtv.integration.LeanbackChannelWorker
 import org.jellyfin.androidtv.ui.InteractionTrackerViewModel
+import org.jellyfin.androidtv.ui.announcements.AnnouncementPresenter
 import org.jellyfin.androidtv.ui.background.AppBackground
 import org.jellyfin.androidtv.ui.navigation.NavigationAction
 import org.jellyfin.androidtv.ui.navigation.NavigationRepository
@@ -30,6 +31,7 @@ import org.jellyfin.androidtv.ui.screensaver.InAppScreensaver
 import org.jellyfin.androidtv.ui.startup.StartupActivity
 import org.jellyfin.androidtv.util.applyTheme
 import org.jellyfin.androidtv.util.isMediaSessionKeyEvent
+import org.jellyfin.sdk.api.client.ApiClient
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import timber.log.Timber
@@ -40,6 +42,7 @@ class MainActivity : FragmentActivity() {
 	private val userRepository by inject<UserRepository>()
 	private val interactionTrackerViewModel by viewModel<InteractionTrackerViewModel>()
 	private val workManager by inject<WorkManager>()
+	private val announcementApi by inject<ApiClient>()
 
 	private lateinit var binding: ActivityMainBinding
 
@@ -77,6 +80,9 @@ class MainActivity : FragmentActivity() {
 		binding.background.setContent { AppBackground() }
 		binding.screensaver.setContent { InAppScreensaver() }
 		setContentView(binding.root)
+		AnnouncementPresenter(
+			this, binding.announcementBanner, sessionRepository, announcementApi,
+		).start()
 	}
 
 	override fun onResume() {
