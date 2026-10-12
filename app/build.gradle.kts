@@ -70,7 +70,7 @@ android {
 
 		debug {
 			// Use different application id to run release and debug at the same time
-			applicationIdSuffix = ".debug"
+			applicationIdSuffix = ".announcements"
 
 			// Set package names used in various XML files
 			resValue("string", "app_id", namespace + applicationIdSuffix)
@@ -78,7 +78,7 @@ android {
 			resValue("string", "app_search_suggest_intent_data", "content://${namespace + applicationIdSuffix}.content/intent")
 
 			// Set flavored application name
-			resValue("string", "app_name", "@string/app_name_debug")
+			resValue("string", "app_name", "Jellyfin TV Announcements (Test)")
 
 			buildConfigField("boolean", "DEVELOPMENT", (defaultConfig.versionCode!! < 100).toString())
 		}
