@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-12T19:18:07.024Z" hostname="DESKTOP-NEHNI47" time="0.013">
+  <properties/>
+  <testcase name="TV include and exclude filters are respected" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.002"/>
+  <testcase name="explicit users override role filters but not exclusion or audience" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.001"/>
+  <testcase name="library targeting uses accessible library IDs" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.001"/>
+  <testcase name="unknown audience and missing user policy fail closed" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.0"/>
+  <testcase name="schedule, disable and archive prevent display" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.003"/>
+  <testcase name="analytics changes preserve dismissal while content edits reset it" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.001"/>
+  <testcase name="dismissals are isolated by server and user" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementTests" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

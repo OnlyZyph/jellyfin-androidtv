@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jellyfin.androidtv.ui.announcements.AnnouncementClientTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-12T19:18:06.636Z" hostname="DESKTOP-NEHNI47" time="0.379">
+  <properties/>
+  <testcase name="cancelling a session cancels a pending HTTP request" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementClientTests" time="0.304"/>
+  <testcase name="authenticated requests preserve reverse proxy paths and filter users" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementClientTests" time="0.061"/>
+  <testcase name="missing plugin is harmless and redirects are not followed" classname="org.jellyfin.androidtv.ui.announcements.AnnouncementClientTests" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
