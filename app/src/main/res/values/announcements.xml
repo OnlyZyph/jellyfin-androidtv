@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="announcement_open">%1$s. %2$s. Select to read announcement.</string>
+    <string name="announcement_close">Close</string>
+    <string name="announcement_dismiss">Dismiss announcement</string>
+</resources>
